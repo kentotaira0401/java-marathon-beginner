@@ -42,7 +42,7 @@ public class UserRepository {
 	 * 
 	 * @param id
 	 *            検索したい生徒ID
-	 * @return 検索された生徒情報 0件のときはnullが返る
+	 * @return 検索された生徒情報 
 	 */
 	public User load(Integer id) {
 		System.out.println("id = " + id);

@@ -7,7 +7,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 /**
- * 3つの商品の金額を受け取るコントローラ
+ * 3つの商品の金額を受け取るコントローラ.
  * 
  * @author kento.taira
  *

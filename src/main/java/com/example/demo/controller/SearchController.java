@@ -16,7 +16,7 @@ import com.example.demo.service.UserService;
  *
  */
 @Controller
-@Transactional ///////////////////
+@Transactional 
 @RequestMapping("/search")
 public class SearchController {
 
@@ -45,6 +45,7 @@ public class SearchController {
 	@RequestMapping("/userView")
 	public String userInfoView(Model model, Integer id) {
 		User user = service.load(id);
+		//model.addAllAttributes("user",user);と、まとめてもよし
 		model.addAttribute("id", user.getId());
 		model.addAttribute("name", user.getName());
 		model.addAttribute("age", user.getAge());
