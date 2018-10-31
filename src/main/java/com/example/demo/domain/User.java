@@ -7,6 +7,8 @@ package com.example.demo.domain;
  *
  */
 public class User {
+	/** id */
+	private Integer id;
 	/** 名前 */
 	private String name;
 	/** 年齢 */
@@ -24,10 +26,34 @@ public class User {
 		this.address = address;
 	}
 
+	public User(Integer id, String name, String age, String address) {
+		super();
+		this.id = id;
+		this.name = name;
+		this.age = age;
+		this.address = address;
+	}
+
+
+
 	@Override
 	public String toString() {
-		return "User [name=" + name + ", age=" + age + ", address=" + address + "]";
+		return "User [id=" + id + ", name=" + name + ", age=" + age + ", address=" + address + "]";
 	}
+
+
+
+	public Integer getId() {
+		return id;
+	}
+
+
+
+	public void setId(Integer id) {
+		this.id = id;
+	}
+
+
 
 	public String getName() {
 		return name;

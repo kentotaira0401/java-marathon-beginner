@@ -37,7 +37,7 @@ public class NameReceiveController {
 	 */
 	@RequestMapping("/output")
 	public String output(Model model, String name) {
-		System.out.println("output");
+		//System.out.println("output");
 		model.addAttribute("name", name);
 		return "outputName";
 	}
